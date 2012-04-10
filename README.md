@@ -4,11 +4,9 @@ Library to return fares from the [Kayak Search Gateway](http://www.kayak.com/lab
 
 ## Usage
 
-Add to Gemfile:
-
-    gem 'kayak_fares'
-
 Search for fares:
+
+    require 'kayakfares'
 
     params = {:from => "SBN", :to => "VRN", :depart => "5/15/2012", :return => "5/20/2012"}
     search = KayakFares.new(params)
